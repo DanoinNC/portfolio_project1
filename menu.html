@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstap CSS (line12 must come first) -->
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    
+    <title>All Star Sports Bar</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html">
+                        <img id="logo" src="img/All_Star_Sports_Bar_Logo.png" class="img-fluid rounded" height="150" width="150" />
+                    </a>
+                </div>  
+                <div class="col">
+                    <h1>All Star Sports Bar</h1>
+                    <h3>Refreshing Drinks, Terrific Food and Awesome Friends</h2>
+                </div>
+                <div class="col-md-4 col-xl-2 mt-4 cart">
+                    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#cartModal">
+                        <i class="fa fa-shopping-cart fa-lg"></i>
+                        <span class="cart-basket d-flex align-items-center justify-content-center">
+                            0
+                        </span>
+                    </button>
+                </div>
+
+                <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="cartModal">CART ITEMS</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="cart-container content-section">
+                                <h2 class="section-header">CART</h2>
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column">MENU ITEM</span>
+                                    <span class="cart-price cart-header cart-column">PRICE</span>
+                                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                                </div>
+                                <div class="cart-items">
+                                </div>
+                                <div class="cart-total">
+                                    <div class="row">
+                                        <strong class="cart-total-items-title">Total Items:</strong>
+                                        <span class="cart-total-items">0</span>
+                                    </div>
+                                    <div>
+                                        <strong class="cart-total-title">Total:</strong>
+                                        <span class="cart-total-price">$0</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-primary btn-order">Place Order</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>    
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#allstarNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="allstarNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About Us</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> Menu / Order Online</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#specials"><i class="fa fa-list fa-lg"></i> Specials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactUs.html"><i class="fa fa-address-card fa-lg"></i> Contact Us</a></li>
+                </ul>
+             </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Menu</li>
+                </ol>
+                <hr />
+            </div>
+        </div>
+
+        <div>
+            <div class="menu-heading">Menu</div>
+            <hr />
+        </div>
+
+        <div>
+            <div class="submenu-heading">Starters</div>
+            <hr />
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-cw">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Chicken Wings</h1>
+                    <p class="menu-p">Chicken wings lathered in barbecue sauce</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$9</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn " type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-mz">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Mozzarella Sticks</h1>
+                    <p class="menu-p">Mozzarella cheese coated in seasoned Italian breadcrumbs, deep fried until golden brown</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$8</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-nachos">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Nachos</h1>
+                    <p class="menu-p">Tortilla chips with beef, melted jalapeño cheese with fried beans, guacamole, pico de gallo, and sour topping</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$10</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+     
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-ct">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Chicken Tenders</h1>
+                    <p class="menu-p">Hand-breaded, golden-fried fresh chicken tenders with honey mustard dipping sauce</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$8</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-mc-bites">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Mac and Cheese Bites</h1>
+                    <p class="menu-p">Tender macaroni and cheese coated in a crispy batter and deep fried to a golden finish</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$7</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-pot-skins">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Potato Skins</h1>
+                    <p class="menu-p">Unpeeled potato halves, hollowed and dressed with bacon, cheddar cheese and green onions</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$7</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <hr />           
+            <div class="submenu-heading">Salads</div>
+            <hr />
+        </div>
+
+        <div class="row">   
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-grdn-sld">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">House Garden Salad</h1>
+                    <p class="menu-p">Crisp iceberg lettuce with cucumbers, tomatoes and sprinkles of shredded cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$7</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>     
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-csr-sld">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Caesar Salad</h1>
+                    <p class="menu-p">Hand-chopped romaine tossed in Caesar dressing with croutons and shaved Parmesan cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$8</h3>
+                    </div>   
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-grld-ckn-sld">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Grilled Chicken Salad</h1>
+                    <p class="menu-p">Grilled chicken with fresh romaine lettuce, carrots, grape tomatoes and cheddar cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$8</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-cobb-sld ">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Cobb Salad</h1>
+                    <p class="menu-p">Mixed greens with grilled chicken, blue cheese, bacon bits, boiled egg and sliced avocado</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$8</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>   
+        </div>
+
+        <div>
+            <hr />   
+            <div class="submenu-heading">Burgers</div>
+            <hr />
+        </div>
+
+        <div class="row">   
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-dbl-chs-brgr">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Double Stack Cheeseburger</h1>
+                    <p class="menu-p">Two juicy pure beef patties with cheese, lettuce, tomatoes, onions and pickles</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$10</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-bcn-msrm-brgr">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Bacon Mushroom Burger</h1>
+                    <p class="menu-p">Fresh beef patty with sauteed mushrooms, onions and american cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$11</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-hkry-smkd-bcn-brgr">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Hickory Smoked Bacon Burger</h1>
+                    <p class="menu-p">Fresh beef patty topped with hickory smoked bacon and cheddar cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$10</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+ 
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-msrm-swiss-brgr">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Mushroom and Swiss Burger</h1>
+                    <p class="menu-p">Fresh beef patty with sauteed mushrooms, onions and melted swiss cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$11</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>   
+        </div>
+
+        <div>
+            <hr />   
+            <div class="submenu-heading">Sandwiches</div>
+            <hr />
+        </div>
+
+        <div class="row">   
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-stk-chs">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Philly Cheese Steak</h1>
+                    <p class="menu-p">Choice steak meat with fresh mushroom, red pepper and sweet onion</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$11</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-ckn-parm-sub">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Chicken Parmesan</h1>
+                    <p class="menu-p">Lightly breaded fried chicken cutlets with marinara and melted mozzarella cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$10</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-trky-bcn-club">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Turkey Bacon Club</h1>
+                    <p class="menu-p">Smoked turkey topped with american cheese, bacon, lettuce, tomato and mayo</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$9</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+ 
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-bcn-chkn-ranch">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Bacon Chicken Ranch</h1>
+                    <p class="menu-p">A seasoned grilled chicken filet with crisp bacon topped with melted cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$10</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>   
+                   
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-blt">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Classic BLT</h1>
+                    <p class="menu-p">Crispy bacon, lettuce, tomato and mayo on toasted bread</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$9</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-mtbl">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Meatball</h1>
+                    <p class="menu-p">Meatballs drenched in marinara sauce and topped with mozzarella cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$8</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <hr />   
+            <div class="submenu-heading">Signature Entrees</div>
+            <hr />
+        </div>
+
+        <div class="row">   
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-ribeye">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">14 Ounce Ribeye Steak</h1>
+                    <p class="menu-p">Thick-cut ribeye steak topped with garlic butter</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$15</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-sirloin">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">8 Ounce Sirloin Steak</h1>
+                    <p class="menu-p">Angus top sirloin steak broiled over open flame</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$13</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+   
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-salmon">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Blackened Salmon</h1>
+                    <p class="menu-p">Grilled cajun blackened salmon fillet seasoned to perfection</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$15</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+ 
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-ckn-parm-meal">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Chicken Parmesan</h1>
+                    <p class="menu-p">Lightly fried parmesan-breaded chicken breasts in marinara with mozzarella cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$14</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>   
+ 
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-lasagna">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Lasagna</h1>
+                    <p class="menu-p">Lasagna pasta topped with ricotta cheese and mozzarella baked to perfection</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$14</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-grld-ckn-breast">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Grilled Chicken Breast</h1>
+                    <p class="menu-p">Juicy chicken breast seasoned and grilled over an open flame</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$13</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <hr />   
+            <div class="submenu-heading">Children's Menu</div>
+            <hr />
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-grld-chs">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Grilled Cheese Sandwich</h1>
+                    <p class="menu-p">Toasted bread layered with american cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$7</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-ckn-tenders">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title ">Fried Chicken Tenders</h1>
+                    <p class="menu-p">Hand breaded fresh chicken tenders</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$7</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+   
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-hot-dog">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Hot Dog</h1>
+                    <p class="menu-p">Classic simple grilled hot dog</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$6</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-mac-and-chs">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Mac and Cheese</h1>
+                    <p class="menu-p">Cheesy, creamy mac and cheese</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$7</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+        </div>
+
+        <div>
+            <hr />   
+            <div class="submenu-heading">Desserts</div>
+            <hr />
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-cin-cof-cake">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Cinnamon Coffee Cake</h1>
+                    <p class="menu-p">Tender, buttery cake topped with crunchy crumbles and cinnamon sugar</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$7</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-tiramisu">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Tiramisu</h1>
+                    <p class="menu-p">Elegant and rich with coffee and liquor-soaked layers of sponge cake</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$9</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+   
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-choc-lava-cake">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Chocolate Lava Cake</h1>
+                    <p class="menu-p">Dark chocolate cake with a warm, fudge center</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$8</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>
+   
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-brwn-sundae">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Brownie Sundae</h1>
+                    <p class="menu-p">Rich brownies topped with vanilla ice cream and hot fudge</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$8</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div> 
+        </div>
+
+        <div>
+            <hr />   
+            <div class="submenu-heading">Sides</div>
+            <hr />
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-frn-fries">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">French Fries</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$3</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-onion-rings">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Onion Rings</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$4</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-tater-tots">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Tater Tots</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$3</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-bkd-potato">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Baked Potato</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$4</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-mshd-potato">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Mashed Potato</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$4</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-broccoli">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Broccoli</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$2</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-grn-beans">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Green Beans</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$2</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-coleslaw">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Coleslaw</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$3</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-pasta-salad">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Pasta Salad</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$3</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+        </div>
+
+        <div>
+            <hr />   
+            <div class="submenu-heading">Beverages</div>
+            <hr />
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-coke">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Coke</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$3</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-diet-coke">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Diet Coke</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$3</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-sprite">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Sprite</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$3</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-dr-pepper">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Dr. Pepper</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$3</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-diet-dr-pepper">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Diet Dr. Pepper</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$3</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-fruit-punch">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Fruit Punch</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$2</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-milk">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Milk</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$2</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-coffee">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Coffee</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$2</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+    
+            <div class="col-sm-6 col-lg-4 menu-hold">
+                <div class="menu-container menu-items">
+                    <div class="menu-img img-ice-tea">
+                        &nbsp;
+                    </div>
+                    <h1 class="menu-title menu-item-title">Ice Tea</h1>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="price menu-item-price">$3</h3>
+                    </div>    
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success btn-outline-dark menu-item-button menu-item-btn" type="button">ADD TO CART</button>
+                    </div>    
+                </div>
+            </div>  
+        </div>
+    </div>
+ 
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="#">Menu / Order Online</a></li>
+                        <li><a href="index.html#specials">Specials</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+19195551212"><i class="fa fa-phone"></i> 1-919-555-1212</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:allstar@gmail.com"><i class="fa fa-envelope-o"></i> allstar@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+       
+</body>
+
+</html>
