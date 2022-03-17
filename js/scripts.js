@@ -4,7 +4,6 @@ if (document.readyState == 'loading') {
     ready()
 }
 
-
 function ready() {
     console.log("The page is fully loaded");
 
@@ -22,7 +21,6 @@ function ready() {
 
     var addToCartButtons = document.getElementsByClassName('menu-item-btn');
     for (var i = 0; i < addToCartButtons.length; i++) {
-        console.log("addToCartButtons.length =" + addToCartButtons.length)
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
@@ -30,26 +28,24 @@ function ready() {
 }
 
 function placeOrderClicked() {
-    alert('Thank you for your purchase')
     var cartItems = document.getElementsByClassName('cart-items')[0]
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
+    console.log("cartItems = ", cartItems)
+    console.log("No of children = ", cartItems.childElementCount)
+    if (cartItems.childElementCount === 0) {
+        alert('There are currently no items in your cart')
+    } else {
+        alert('Thank you for your purchase')
+        while (cartItems.hasChildNodes()) {
+            cartItems.removeChild(cartItems.firstChild)
+        }
+        updateCartTotal()
     }
-    updateCartTotal()
 }
 
 function removeCartItem(event) {
-    console.log("updateCartTotal executed");
     var buttonClicked = event.target
-    console.log("buttonClicked =" + buttonClicked);
-    buttonClicked.parentElement.parentElement.parentElement.remove()
+    buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
-}
-
-var quantityInputs = document.getElementsByClassName('cart-quantity-input')
-for (var i = 0; i < quantityInputs.length; i++) {
-    var input = quantityInputs[i]
-    input.addEventListener('change', quantityChanged)
 }
 
 function quantityChanged(event) {
@@ -90,9 +86,7 @@ function addItemToCart(title, price) {
         </div>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button"> 
-                <i class="fa fa-trash fa-lg"></i>
-            </button>
+            <button class="btn btn-danger" type="button"> Remove</button>
         </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
@@ -101,7 +95,6 @@ function addItemToCart(title, price) {
 }
 
 function updateCartTotal() {
-    console.log("updateCartTotal executed");
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
     var total = 0
